@@ -508,7 +508,7 @@ Copy-paste this code into your readme and change the links.
 Endpoint: `api/pin?username=anuraghazra&repo=github-readme-stats`
 
 ```md
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://your-instance.vercel.app/api/pin/?username=yourusername&repo=your-repo-name)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 ```
 
 ### Demo
@@ -631,7 +631,7 @@ You can use the `&layout=compact` option to change the card design.
 You can use the `&layout=donut` option to change the card design.
 
 ```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://your-instance.vercel.app/api/top-langs/?username=yourusername&layout=donut)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 ```
 
 ### Donut Vertical Chart Language Card Layout
@@ -639,7 +639,7 @@ You can use the `&layout=donut` option to change the card design.
 You can use the `&layout=donut-vertical` option to change the card design.
 
 ```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=donut-vertical)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://your-instance.vercel.app/api/top-langs/?username=yourusername&layout=donut-vertical)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 ```
 
 ### Pie Chart Language Card Layout
@@ -647,7 +647,7 @@ You can use the `&layout=donut-vertical` option to change the card design.
 You can use the `&layout=pie` option to change the card design.
 
 ```md
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=pie)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://your-instance.vercel.app/api/top-langs/?username=yourusername&layout=pie)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 ```
 
 ### Hide Progress Bars
@@ -690,7 +690,7 @@ You can use the `&hide_progress=true` option to hide the percentages and the pro
 Change the `?username=` value to your [WakaTime](https://wakatime.com) username.
 
 ```md
-[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)](https://github.com/anuraghazra/github-readme-stats)
+[![WakaTime stats](https://your-instance.vercel.app/api/wakatime?username=yourusername)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 ```
 
 ### Demo
@@ -836,7 +836,7 @@ Since the GitHub API only allows 5k requests per hour, my `https://github-readme
 > [!NOTE]\
 > If you are on the [Pro (i.e. paid)](https://vercel.com/pricing) Vercel plan, the [maxDuration](https://vercel.com/docs/concepts/projects/project-configuration#value-definition) value found in the [vercel.json](https://github.com/anuraghazra/github-readme-stats/blob/master/vercel.json) can be increased when your Vercel instance frequently times out during the card request. You are advised to keep this value lower than `30` seconds to prevent high memory usage.
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/anuraghazra/github-readme-stats)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/FutureUnreal/github-readme-stats-enhanced)
 
 <details>
  <summary><b>:hammer_and_wrench: Step-by-step guide on setting up your own Vercel instance</b></summary>
