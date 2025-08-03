@@ -21,38 +21,56 @@ import {
  * @returns {Promise<AxiosResponse>} Languages fetcher response.
  */
 const fetcher = (variables, token) => {
-  const ownerAffiliations = variables.includeManagedRepos
-    ? '[OWNER, ORGANIZATION_MEMBER]'
-    : 'OWNER';
-
-  return request(
-    {
-      query: `
-      query userInfo($login: String!) {
-        user(login: $login) {
-          # fetch only owner repos & not forks
-          repositories(ownerAffiliations: ${ownerAffiliations}, isFork: false, first: 100) {
-            nodes {
-              name
-              owner {
-                login
-                __typename
-              }
-              viewerPermission
-              languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
-                edges {
-                  size
-                  node {
-                    color
-                    name
-                  }
+  const query = variables.includeManagedRepos ? `
+    query userInfo($login: String!) {
+      user(login: $login) {
+        # fetch owner repos & organization repos where user has management permissions
+        repositories(ownerAffiliations: [OWNER, ORGANIZATION_MEMBER], isFork: false, first: 100) {
+          nodes {
+            name
+            owner {
+              login
+              __typename
+            }
+            viewerPermission
+            languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+              edges {
+                size
+                node {
+                  color
+                  name
                 }
               }
             }
           }
         }
       }
-      `,
+    }
+  ` : `
+    query userInfo($login: String!) {
+      user(login: $login) {
+        # fetch only owner repos & not forks
+        repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
+          nodes {
+            name
+            languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+              edges {
+                size
+                node {
+                  color
+                  name
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  return request(
+    {
+      query,
       variables,
     },
     {
