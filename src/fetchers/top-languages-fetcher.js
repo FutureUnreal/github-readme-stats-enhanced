@@ -133,9 +133,6 @@ const fetchTopLanguages = async (
     includeManagedRepos: include_managed_repos
   });
 
-  // Debug logging
-  console.log(`[DEBUG] Top Languages - Username: ${username}, includeManagedRepos: ${include_managed_repos}`);
-
   if (res.data.errors) {
     logger.error(res.data.errors);
     if (res.data.errors[0].type === "NOT_FOUND") {
@@ -168,15 +165,6 @@ const fetchTopLanguages = async (
 
   let repoToHide = {};
 
-  // Debug logging
-  console.log(`[DEBUG] Total repositories fetched: ${repoNodes.length}`);
-  console.log(`[DEBUG] First few repos:`, repoNodes.slice(0, 3).map(r => ({
-    name: r.name,
-    owner: r.owner?.login,
-    ownerType: r.owner?.__typename,
-    permission: r.viewerPermission
-  })));
-
   // populate repoToHide map for quick lookup
   // while filtering out
   if (exclude_repo) {
@@ -187,7 +175,6 @@ const fetchTopLanguages = async (
 
   // Filter repositories based on management permissions
   if (include_managed_repos) {
-    console.log(`[DEBUG] Filtering for managed repos`);
     // Include managed organization repositories
     repoNodes = repoNodes.filter(repo => {
       // Include owned repositories (user repositories)
@@ -201,14 +188,11 @@ const fetchTopLanguages = async (
       return false;
     });
   } else {
-    console.log(`[DEBUG] Filtering for user repos only`);
     // Only include user's own repositories, exclude organization repositories
     repoNodes = repoNodes.filter(repo => {
       return repo.owner && repo.owner.__typename === 'User';
     });
   }
-
-  console.log(`[DEBUG] Repositories after filtering: ${repoNodes.length}`);
 
   // filter out repositories to be hidden
   repoNodes = repoNodes

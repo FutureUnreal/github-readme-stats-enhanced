@@ -20,6 +20,10 @@ const GRAPHQL_REPOS_FIELD = `
     totalCount
     nodes {
       name
+      owner {
+        login
+        __typename
+      }
       stargazers {
         totalCount
       }
@@ -232,24 +236,34 @@ const statsFetcher = async ({
     endCursor = res.data.data.user.repositories.pageInfo.endCursor;
   }
 
-  // Filter repositories based on management permissions if includeManagedRepos is enabled
-  if (includeManagedRepos && stats && stats.data && stats.data.data && stats.data.data.user) {
+  // Filter repositories based on management permissions
+  if (stats && stats.data && stats.data.data && stats.data.data.user) {
     const allRepos = stats.data.data.user.repositories.nodes;
-    const managedRepos = allRepos.filter(repo => {
-      // Include owned repositories (user repositories)
-      if (repo.owner && repo.owner.__typename === 'User') {
-        return true;
-      }
-      // Include organization repositories where user has ADMIN or MAINTAIN permissions
-      if (repo.owner && repo.owner.__typename === 'Organization') {
-        return repo.viewerPermission === 'ADMIN' || repo.viewerPermission === 'MAINTAIN';
-      }
-      return false;
-    });
+    let filteredRepos;
+
+    if (includeManagedRepos) {
+      // Include managed organization repositories
+      filteredRepos = allRepos.filter(repo => {
+        // Include owned repositories (user repositories)
+        if (repo.owner && repo.owner.__typename === 'User') {
+          return true;
+        }
+        // Include organization repositories where user has ADMIN or MAINTAIN permissions
+        if (repo.owner && repo.owner.__typename === 'Organization') {
+          return repo.viewerPermission === 'ADMIN' || repo.viewerPermission === 'MAINTAIN';
+        }
+        return false;
+      });
+    } else {
+      // Only include user's own repositories, exclude organization repositories
+      filteredRepos = allRepos.filter(repo => {
+        return repo.owner && repo.owner.__typename === 'User';
+      });
+    }
 
     // Update the repository nodes with filtered results
-    stats.data.data.user.repositories.nodes = managedRepos;
-    stats.data.data.user.repositories.totalCount = managedRepos.length;
+    stats.data.data.user.repositories.nodes = filteredRepos;
+    stats.data.data.user.repositories.totalCount = filteredRepos.length;
   }
 
   return stats;
