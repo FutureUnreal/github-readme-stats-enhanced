@@ -1,22 +1,24 @@
 {
-  "name": "github-readme-stats",
-  "version": "1.0.0",
-  "description": "Dynamically generate stats for your GitHub readme",
+  "name": "github-readme-stats-enhanced",
+  "version": "1.1.0",
+  "description": "Enhanced version of github-readme-stats with managed organization repositories support",
   "keywords": [
     "github-readme-stats",
     "readme-stats",
     "cards",
-    "card-generator"
+    "card-generator",
+    "organization-repos",
+    "managed-repos"
   ],
   "main": "src/index.js",
   "type": "module",
-  "homepage": "https://github.com/anuraghazra/github-readme-stats",
+  "homepage": "https://github.com/FutureUnreal/github-readme-stats-enhanced",
   "bugs": {
-    "url": "https://github.com/anuraghazra/github-readme-stats/issues"
+    "url": "https://github.com/FutureUnreal/github-readme-stats-enhanced/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anuraghazra/github-readme-stats.git"
+    "url": "https://github.com/FutureUnreal/github-readme-stats-enhanced.git"
   },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",

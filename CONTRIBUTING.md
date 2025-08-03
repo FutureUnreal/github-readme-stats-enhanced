@@ -1,11 +1,11 @@
-# Contributing to [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+# Contributing to [github-readme-stats-enhanced](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 
-We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
+We love your input! We want to make contributing to this enhanced project as easy and transparent as possible, whether it's:
 
--   Reporting [an issue](https://github.com/anuraghazra/github-readme-stats/issues/new?assignees=&labels=bug&template=bug_report.yml).
--   [Discussing](https://github.com/anuraghazra/github-readme-stats/discussions) the current state of the code.
--   Submitting [a fix](https://github.com/anuraghazra/github-readme-stats/compare).
--   Proposing [new features](https://github.com/anuraghazra/github-readme-stats/issues/new?assignees=&labels=enhancement&template=feature_request.yml).
+-   Reporting [an issue](https://github.com/FutureUnreal/github-readme-stats-enhanced/issues/new).
+-   [Discussing](https://github.com/FutureUnreal/github-readme-stats-enhanced/discussions) the current state of the code.
+-   Submitting [a fix](https://github.com/FutureUnreal/github-readme-stats-enhanced/compare).
+-   Proposing [new features](https://github.com/FutureUnreal/github-readme-stats-enhanced/issues/new).
 -   Becoming a maintainer.
 
 ## All Changes Happen Through Pull Requests
