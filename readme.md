@@ -187,7 +187,7 @@ You can pass a query parameter `&show=` to show any specific additional stats wi
 To enable icons, you can pass `&show_icons=true` in the query param, like so:
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal&show_icons=true)
 ```
 
 ### Themes
@@ -197,7 +197,7 @@ With inbuilt themes, you can customize the look of the card without doing any [m
 Use `&theme=THEME_NAME` parameter like so :
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal&show_icons=true&theme=radical)
 ```
 
 #### All inbuilt themes
@@ -391,7 +391,7 @@ Yay! You are no longer limited to 6 pinned repositories.
 
 Copy-paste this code into your readme and change the links.
 
-Endpoint: `api/pin?username=FutureUneal&repo=github-readme-stats`
+Endpoint: `api/pin?username=FutureUnreal&repo=github-readme-stats`
 
 ```md
 [![Readme Card](https://github-readme-stats-enhanced.vercel.app/api/pin/?username=yourusername&repo=your-repo-name)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
@@ -399,11 +399,11 @@ Endpoint: `api/pin?username=FutureUneal&repo=github-readme-stats`
 
 ### Demo
 
-![Readme Card](https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUneal\&repo=github-readme-stats-enhanced)
+![Readme Card](https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUnreal\&repo=github-readme-stats-enhanced)
 
 Use [show\_owner](#repo-card-exclusive-options) query option to include the repo's owner username
 
-![Readme Card](https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUneal\&repo=github-readme-stats-enhanced\&show_owner=true)
+![Readme Card](https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUnreal\&repo=github-readme-stats-enhanced\&show_owner=true)
 
 # GitHub Gist Pins
 
@@ -476,7 +476,7 @@ By default, only the byte count is used for determining the languages percentage
 *   `&size_weight=0&count_weight=1` - Orders by repo count
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&size_weight=0.5&count_weight=0.5)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUnreal&size_weight=0.5&count_weight=0.5)
 ```
 
 ### Exclude individual repositories
@@ -484,7 +484,7 @@ By default, only the byte count is used for determining the languages percentage
 You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repositories.
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&exclude_repo=github-readme-stats,FutureUneal.github.io)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUnreal&exclude_repo=github-readme-stats,FutureUnreal.github.io)
 ```
 
 ### Hide individual languages
@@ -492,7 +492,7 @@ You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repo
 You can use `&hide=language1,language2` parameter to hide individual languages.
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&hide=javascript,html)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUnreal&hide=javascript,html)
 ```
 
 ### Show more languages
@@ -500,7 +500,7 @@ You can use `&hide=language1,language2` parameter to hide individual languages.
 You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 20 (inclusive). By default it was set to `5` for `normal` & `donut` and `6` for other layouts.
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&langs_count=8)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUnreal&langs_count=8)
 ```
 
 ### Compact Language Card Layout
@@ -508,7 +508,7 @@ You can use the `&langs_count=` option to increase or decrease the number of lan
 You can use the `&layout=compact` option to change the card design.
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUnreal&layout=compact)
 ```
 
 ### Donut Chart Language Card Layout
@@ -540,32 +540,32 @@ You can use the `&layout=pie` option to change the card design.
 You can use the `&hide_progress=true` option to hide the percentages and the progress bars (layout will be automatically set to `compact`).
 
 ```md
-![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal&hide_progress=true)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUnreal&hide_progress=true)
 ```
 
 ### Demo
 
-![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUnreal)
 
 *   Compact layout
 
-![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&layout=compact)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUnreal\&layout=compact)
 
 *   Donut Chart layout
 
-[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&layout=donut)](https://github.com/FutureUneal/github-readme-stats-enhanced)
+[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUnreal\&layout=donut)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 
 *   Donut Vertical Chart layout
 
-[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&layout=donut-vertical)](https://github.com/FutureUneal/github-readme-stats-enhanced)
+[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUnreal\&layout=donut-vertical)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 
 *   Pie Chart layout
 
-[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&layout=pie)](https://github.com/FutureUneal/github-readme-stats-enhanced)
+[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUnreal\&layout=pie)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
 
 *   Hidden progress bars
 
-![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&hide_progress=true)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUnreal\&hide_progress=true)
 
 # WakaTime Stats Card
 
@@ -594,11 +594,11 @@ Change the `?username=` value to your [WakaTime](https://wakatime.com) username.
 
 *   Default
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal)
 
 *   With icons and theme
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&show_icons=true\&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal\&show_icons=true\&theme=radical)
 
 ## Quick Tip (Align The Cards)
 
