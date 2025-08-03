@@ -183,7 +183,7 @@ const fetchTopLanguages = async (
       }
       // Include organization repositories where user has management permissions
       if (repo.owner && repo.owner.__typename === 'Organization') {
-        return ['ADMIN', 'MAINTAIN', 'WRITE'].includes(repo.viewerPermission);
+        return ['ADMIN', 'MAINTAIN'].includes(repo.viewerPermission);
       }
       return false;
     });

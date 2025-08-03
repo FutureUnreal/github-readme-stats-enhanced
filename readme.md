@@ -1,11 +1,11 @@
 <p align="center">
  <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats Enhanced" />
  <h2 align="center">GitHub Readme Stats Enhanced</h2>
- <p align="center">Enhanced version of github-readme-stats with managed organization repositories support!</p>
+ <p align="center">Enhanced github-readme-stats with managed organization repositories support!</p>
 </p>
 
 <p align="center">
-  <strong>🚀 New Feature: Support for statistics from organization repositories you manage!</strong>
+  <strong>🚀 New Feature: Statistics from managed organization repositories!</strong>
 </p>
 
 <p align="center">
@@ -30,10 +30,10 @@ This is an enhanced version of [anuraghazra/github-readme-stats](https://github.
 
 ### 🆕 New Features
 
-- **Managed Repository Statistics** - Support for statistics from organization repositories you manage (with ADMIN or MAINTAIN permissions)
-- **Precise Permission Control** - Only count repositories you actually manage, not all repositories in organizations
+- **Managed Repository Statistics** - Statistics from organization repositories you manage (ADMIN/MAINTAIN permissions)
+- **Precise Permission Control** - Only count repositories you actually manage
 - **Enhanced Stars Statistics** - Include stars from managed organization repositories
-- **Enhanced Language Statistics** - Include programming languages from managed organization repositories
+- **Enhanced Language Statistics** - Include languages from managed organization repositories
 
 ### 💡 Why This Feature?
 
@@ -57,12 +57,12 @@ Simply add the `include_managed_repos=true` parameter to your existing URLs:
 
 ### Permission Levels
 
-Only organization repositories with the following permissions will be counted:
-- ✅ `ADMIN` - Administrator permissions
-- ✅ `MAINTAIN` - Maintainer permissions
-- ❌ `WRITE` - Write permissions (not counted)
-- ❌ `TRIAGE` - Triage permissions (not counted)
-- ❌ `READ` - Read permissions (not counted)
+Organization repositories counted:
+- ✅ `ADMIN` - Administrator
+- ✅ `MAINTAIN` - Maintainer
+- ❌ `WRITE` - Not counted
+- ❌ `TRIAGE` - Not counted
+- ❌ `READ` - Not counted
 
 # Features <!-- omit in toc -->
 
@@ -111,11 +111,16 @@ Only organization repositories with the following permissions will be counted:
 # Important Notices <!-- omit in toc -->
 
 > [!IMPORTANT]\
-> This project is based on [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats) with added managed repository statistics functionality. Since GitHub API only allows [5k requests per hour](https://docs.github.com/en/graphql/overview/resource-limitations), **we strongly recommend deploying your own instance** for the best experience.
+> Enhanced version of [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats) with managed repository statistics. Since GitHub API allows [5k requests per hour](https://docs.github.com/en/graphql/overview/resource-limitations), **deploy your own instance** for best experience.
 
 > [!WARNING]\
-> **Managed Repository Feature Notes**: Enabling `include_managed_repos=true` will query more repository data and may more easily trigger GitHub API rate limits. Recommendations:
-> - Deploy your own Vercel instance
+> **Managed Repository Feature Notes**:
+> - `include_managed_repos=true` only works correctly when using **your own deployed instance** with **your own GitHub token**
+> - Using someone else's instance will not detect your organization repository permissions correctly
+> - This feature queries more repository data and may trigger GitHub API rate limits more easily
+>
+> **Recommendations**:
+> - Deploy your own Vercel instance for full functionality
 > - Use appropriate cache settings
 > - Avoid frequent refreshing
 
@@ -128,11 +133,11 @@ Only organization repositories with the following permissions will be counted:
 
 ## 🔄 Relationship with Original Project
 
-This project is an enhanced version of [github-readme-stats](https://github.com/anuraghazra/github-readme-stats), maintaining all original features while adding managed repository statistics functionality. Thanks to the original author [@anuraghazra](https://github.com/anuraghazra) for the excellent work!
+Enhanced version of [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) with managed repository statistics. Thanks to [@anuraghazra](https://github.com/anuraghazra) for the excellent work!
 
 # GitHub Stats Card
 
-Copy and paste this into your markdown, and that's it. Simple!
+Copy and paste this into your markdown!
 
 Change the `?username=` value to your GitHub username.
 
@@ -435,7 +440,7 @@ The top languages card shows a GitHub user's most frequently used top languages.
 > [!WARNING]\
 > By default, this card only shows language data from your own non-fork repositories and does not depend on who authored the commits. It does not include your contributions to other users'/organizations' repositories.
 >
-> **🆕 Enhanced Feature**: Use the `include_managed_repos=true` parameter to include language statistics from organization repositories you manage (with ADMIN or MAINTAIN permissions)!
+> **🆕 Enhanced Feature**: Use the `include_managed_repos=true` parameter to include language statistics from organization repositories you manage (ADMIN/MAINTAIN permissions)!
 
 > [!WARNING]\
 > Currently, this card only shows data from the top 100 repositories due to GitHub API limitations. For better performance with managed repositories, consider deploying your own instance.
@@ -591,71 +596,22 @@ Change the `?username=` value to your [WakaTime](https://wakatime.com) username.
 
 ![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal)
 
-*   Hiding specific stats
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&hide=contribs,issues)
-
-*   Showing additional stats
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&show_icons=true\&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
-
-*   Showing icons
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&hide=issues\&show_icons=true)
-
-*   Shows Github logo instead rank level
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&rank_icon=github)
-
-*   Shows user rank percentile instead of rank level
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&rank_icon=percentile)
-
-*   Customize Border Color
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&border_color=2e4058)
-
-*   Include All Commits
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&include_all_commits=true)
-
-*   Themes
-
-Choose from any of the [default themes](#themes)
+*   With icons and theme
 
 ![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&show_icons=true\&theme=radical)
 
-*   Gradient
+## Quick Tip (Align The Cards)
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&bg_color=30,e96443,904e95\&title_color=fff\&text_color=fff)
+By default, GitHub doesn't lay out the cards side by side. To do that, you can use this approach:
 
-*   Customizing stats card
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api/?username=FutureUneal\&show_icons=true\&title_color=fff\&icon_color=79ff97\&text_color=9f9f9f\&bg_color=151515)
-
-*   Setting card locale
-
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api/?username=FutureUneal\&locale=es)
-
-*   Customizing repo card
-
-![Customized Card](https://github-readme-stats-enhanced.vercel.app/api/pin?username=FutureUneal\&repo=github-readme-stats\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515)
-
-*   Gist card
-
-![Gist Card](https://github-readme-stats-enhanced.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)
-
-*   Customizing gist card
-
-![Gist Card](https://github-readme-stats-enhanced.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d&theme=calm)
-
-*   Top languages
-
-![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal)
-
-*   WakaTime card
-
-![Harlok's WakaTime stats](https://github-readme-stats-enhanced.vercel.app/api/wakatime?username=ffflabs)
+```html
+<a href="https://github.com/FutureUnreal/github-readme-stats-enhanced">
+  <img height=200 align="center" src="https://github-readme-stats-enhanced.vercel.app/api?username=yourusername" />
+</a>
+<a href="https://github.com/FutureUnreal/github-readme-stats-enhanced">
+  <img height=200 align="center" src="https://github-readme-stats-enhanced.vercel.app/api/top-langs?username=yourusername&layout=compact&langs_count=8&card_width=320" />
+</a>
+```
 
 ***
 

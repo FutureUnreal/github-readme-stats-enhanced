@@ -106,8 +106,13 @@
 > 本项目基于 [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats) 开发，添加了管理仓库统计功能。由于 GitHub API 每小时只允许 [5k 请求](https://docs.github.com/en/graphql/overview/resource-limitations)，**强烈建议部署自己的实例**以获得最佳体验。
 
 > [!WARNING]\
-> **管理仓库功能注意事项**：启用 `include_managed_repos=true` 会查询更多仓库数据，可能更容易触发 GitHub API 的速率限制。建议：
-> - 部署自己的 Vercel 实例
+> **管理仓库功能注意事项**：
+> - `include_managed_repos=true` 只有在使用**你自己部署的实例**和**你自己的 GitHub token** 时才能正常工作
+> - 使用他人的实例无法正确检测你的组织仓库权限
+> - 此功能会查询更多仓库数据，可能更容易触发 GitHub API 速率限制
+>
+> **建议**：
+> - 部署自己的 Vercel 实例以获得完整功能
 > - 使用适当的缓存设置
 > - 避免频繁刷新
 
@@ -344,7 +349,7 @@ Top Languages Card 显示了 GitHub 用户最常用的编程语言。
 > [!WARNING]\
 > 默认情况下，此卡片只显示你自己的非 fork 仓库中的语言使用情况，不依赖于提交的作者是谁。它不包括你对其他用户/组织仓库的贡献。
 >
-> **🆕 增强功能**：使用 `include_managed_repos=true` 参数可以包含你在组织中管理的仓库（具有 ADMIN 或 MAINTAIN 权限）的语言统计！
+> **🆕 增强功能**：使用 `include_managed_repos=true` 参数可以包含你在组织中管理的仓库（ADMIN/MAINTAIN 权限）的语言统计！
 
 > [!TIP]\
 > **🆕 新功能**：现在你可以使用 `include_managed_repos=true` 参数来统计你在组织中管理的仓库的语言使用情况！
