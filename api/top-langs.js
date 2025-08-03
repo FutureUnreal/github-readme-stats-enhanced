@@ -34,6 +34,17 @@ export default async (req, res) => {
     hide_progress,
     include_managed_repos,
   } = req.query;
+
+  // Debug logging for parameter parsing
+  console.log(`[DEBUG] API Parameters:`, {
+    username,
+    include_managed_repos,
+    layout,
+    hide_langs_below,
+    theme,
+    line_height
+  });
+
   res.setHeader("Content-Type", "image/svg+xml");
 
   if (blacklist.includes(username)) {
