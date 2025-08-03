@@ -187,7 +187,7 @@ You can pass a query parameter `&show=` to show any specific additional stats wi
 To enable icons, you can pass `&show_icons=true` in the query param, like so:
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=FutureUneal&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal&show_icons=true)
 ```
 
 ### Themes
@@ -197,7 +197,7 @@ With inbuilt themes, you can customize the look of the card without doing any [m
 Use `&theme=THEME_NAME` parameter like so :
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=FutureUneal&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal&show_icons=true&theme=radical)
 ```
 
 #### All inbuilt themes
@@ -416,16 +416,16 @@ Copy-paste this code into your readme and change the links.
 Endpoint: `api/gist?id=bbfce31e0217a3689c8d961a356cb10d`
 
 ```md
-[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
+[![Gist Card](https://github-readme-stats-enhanced.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
 ```
 
 ### Demo
 
-![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)
+![Gist Card](https://github-readme-stats-enhanced.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)
 
 Use [show\_owner](#gist-card-exclusive-options) query option to include the gist's owner username
 
-![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d\&show_owner=true)
+![Gist Card](https://github-readme-stats-enhanced.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d\&show_owner=true)
 
 # Top Languages Card
 
@@ -540,32 +540,32 @@ You can use the `&layout=pie` option to change the card design.
 You can use the `&hide_progress=true` option to hide the percentages and the progress bars (layout will be automatically set to `compact`).
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&hide_progress=true)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal&hide_progress=true)
 ```
 
 ### Demo
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal)
 
 *   Compact layout
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&layout=compact)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&layout=compact)
 
 *   Donut Chart layout
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&layout=donut)](https://github.com/FutureUneal/github-readme-stats)
+[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&layout=donut)](https://github.com/FutureUneal/github-readme-stats-enhanced)
 
 *   Donut Vertical Chart layout
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&layout=donut-vertical)](https://github.com/FutureUneal/github-readme-stats)
+[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&layout=donut-vertical)](https://github.com/FutureUneal/github-readme-stats-enhanced)
 
 *   Pie Chart layout
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&layout=pie)](https://github.com/FutureUneal/github-readme-stats)
+[![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&layout=pie)](https://github.com/FutureUneal/github-readme-stats-enhanced)
 
 *   Hidden progress bars
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&hide_progress=true)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal\&hide_progress=true)
 
 # WakaTime Stats Card
 
