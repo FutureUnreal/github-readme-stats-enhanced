@@ -182,7 +182,7 @@ You can pass a query parameter `&show=` to show any specific additional stats wi
 To enable icons, you can pass `&show_icons=true` in the query param, like so:
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=FutureUneal&show_icons=true)
 ```
 
 ### Themes
@@ -192,7 +192,7 @@ With inbuilt themes, you can customize the look of the card without doing any [m
 Use `&theme=THEME_NAME` parameter like so :
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=FutureUneal&show_icons=true&theme=radical)
 ```
 
 #### All inbuilt themes
@@ -386,7 +386,7 @@ Yay! You are no longer limited to 6 pinned repositories.
 
 Copy-paste this code into your readme and change the links.
 
-Endpoint: `api/pin?username=anuraghazra&repo=github-readme-stats`
+Endpoint: `api/pin?username=FutureUneal&repo=github-readme-stats`
 
 ```md
 [![Readme Card](https://github-readme-stats-enhanced.vercel.app/api/pin/?username=yourusername&repo=your-repo-name)](https://github.com/FutureUnreal/github-readme-stats-enhanced)
@@ -394,11 +394,11 @@ Endpoint: `api/pin?username=anuraghazra&repo=github-readme-stats`
 
 ### Demo
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra\&repo=github-readme-stats)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=FutureUneal\&repo=github-readme-stats)
 
 Use [show\_owner](#repo-card-exclusive-options) query option to include the repo's owner username
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra\&repo=github-readme-stats\&show_owner=true)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=FutureUneal\&repo=github-readme-stats\&show_owner=true)
 
 # GitHub Gist Pins
 
@@ -471,7 +471,7 @@ By default, only the byte count is used for determining the languages percentage
 *   `&size_weight=0&count_weight=1` - Orders by repo count
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&size_weight=0.5&count_weight=0.5)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&size_weight=0.5&count_weight=0.5)
 ```
 
 ### Exclude individual repositories
@@ -479,7 +479,7 @@ By default, only the byte count is used for determining the languages percentage
 You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repositories.
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&exclude_repo=github-readme-stats,anuraghazra.github.io)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&exclude_repo=github-readme-stats,FutureUneal.github.io)
 ```
 
 ### Hide individual languages
@@ -487,7 +487,7 @@ You can use the `&exclude_repo=repo1,repo2` parameter to exclude individual repo
 You can use `&hide=language1,language2` parameter to hide individual languages.
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&hide=javascript,html)
 ```
 
 ### Show more languages
@@ -495,7 +495,7 @@ You can use `&hide=language1,language2` parameter to hide individual languages.
 You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 20 (inclusive). By default it was set to `5` for `normal` & `donut` and `6` for other layouts.
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&langs_count=8)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&langs_count=8)
 ```
 
 ### Compact Language Card Layout
@@ -503,7 +503,7 @@ You can use the `&langs_count=` option to increase or decrease the number of lan
 You can use the `&layout=compact` option to change the card design.
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&layout=compact)
 ```
 
 ### Donut Chart Language Card Layout
@@ -535,32 +535,32 @@ You can use the `&layout=pie` option to change the card design.
 You can use the `&hide_progress=true` option to hide the percentages and the progress bars (layout will be automatically set to `compact`).
 
 ```md
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide_progress=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal&hide_progress=true)
 ```
 
 ### Demo
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal)
 
 *   Compact layout
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra\&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&layout=compact)
 
 *   Donut Chart layout
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra\&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&layout=donut)](https://github.com/FutureUneal/github-readme-stats)
 
 *   Donut Vertical Chart layout
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra\&layout=donut-vertical)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&layout=donut-vertical)](https://github.com/FutureUneal/github-readme-stats)
 
 *   Pie Chart layout
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra\&layout=pie)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&layout=pie)](https://github.com/FutureUneal/github-readme-stats)
 
 *   Hidden progress bars
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra\&hide_progress=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FutureUneal\&hide_progress=true)
 
 # WakaTime Stats Card
 
@@ -589,57 +589,57 @@ Change the `?username=` value to your [WakaTime](https://wakatime.com) username.
 
 *   Default
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal)
 
 *   Hiding specific stats
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&hide=contribs,issues)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&hide=contribs,issues)
 
 *   Showing additional stats
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&show_icons=true\&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&show_icons=true\&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
 
 *   Showing icons
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&hide=issues\&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&hide=issues\&show_icons=true)
 
 *   Shows Github logo instead rank level
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&rank_icon=github)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&rank_icon=github)
 
 *   Shows user rank percentile instead of rank level
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&rank_icon=percentile)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&rank_icon=percentile)
 
 *   Customize Border Color
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&border_color=2e4058)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&border_color=2e4058)
 
 *   Include All Commits
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&include_all_commits=true)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&include_all_commits=true)
 
 *   Themes
 
 Choose from any of the [default themes](#themes)
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&show_icons=true\&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&show_icons=true\&theme=radical)
 
 *   Gradient
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&bg_color=30,e96443,904e95\&title_color=fff\&text_color=fff)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUneal\&bg_color=30,e96443,904e95\&title_color=fff\&text_color=fff)
 
 *   Customizing stats card
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api/?username=anuraghazra\&show_icons=true\&title_color=fff\&icon_color=79ff97\&text_color=9f9f9f\&bg_color=151515)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api/?username=FutureUneal\&show_icons=true\&title_color=fff\&icon_color=79ff97\&text_color=9f9f9f\&bg_color=151515)
 
 *   Setting card locale
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api/?username=anuraghazra\&locale=es)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api/?username=FutureUneal\&locale=es)
 
 *   Customizing repo card
 
-![Customized Card](https://github-readme-stats-enhanced.vercel.app/api/pin?username=anuraghazra\&repo=github-readme-stats\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515)
+![Customized Card](https://github-readme-stats-enhanced.vercel.app/api/pin?username=FutureUneal\&repo=github-readme-stats\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515)
 
 *   Gist card
 
@@ -651,7 +651,7 @@ Choose from any of the [default themes](#themes)
 
 *   Top languages
 
-![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=anuraghazra)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=FutureUneal)
 
 *   WakaTime card
 
