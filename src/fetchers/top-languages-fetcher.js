@@ -24,8 +24,28 @@ const fetcher = (variables, token) => {
   const query = variables.includeManagedRepos ? `
     query userInfo($login: String!) {
       user(login: $login) {
-        # fetch owner repos & organization repos where user has management permissions
-        repositories(ownerAffiliations: [OWNER, ORGANIZATION_MEMBER], isFork: false, first: 100) {
+        # fetch owner repos first
+        ownedRepos: repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
+          nodes {
+            name
+            owner {
+              login
+              __typename
+            }
+            viewerPermission
+            languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+              edges {
+                size
+                node {
+                  color
+                  name
+                }
+              }
+            }
+          }
+        }
+        # fetch organization repos separately
+        orgRepos: repositories(ownerAffiliations: ORGANIZATION_MEMBER, isFork: false, first: 100) {
           nodes {
             name
             owner {
@@ -136,7 +156,16 @@ const fetchTopLanguages = async (
     );
   }
 
-  let repoNodes = res.data.data.user.repositories.nodes;
+  let repoNodes;
+  if (include_managed_repos) {
+    // Combine owned repos and organization repos
+    const ownedRepos = res.data.data.user.ownedRepos.nodes;
+    const orgRepos = res.data.data.user.orgRepos.nodes;
+    repoNodes = [...ownedRepos, ...orgRepos];
+  } else {
+    repoNodes = res.data.data.user.repositories.nodes;
+  }
+
   let repoToHide = {};
 
   // Debug logging
@@ -165,9 +194,9 @@ const fetchTopLanguages = async (
       if (repo.owner && repo.owner.__typename === 'User') {
         return true;
       }
-      // Include organization repositories where user has ADMIN or MAINTAIN permissions
+      // Include organization repositories where user has management permissions
       if (repo.owner && repo.owner.__typename === 'Organization') {
-        return repo.viewerPermission === 'ADMIN' || repo.viewerPermission === 'MAINTAIN';
+        return ['ADMIN', 'MAINTAIN', 'WRITE'].includes(repo.viewerPermission);
       }
       return false;
     });
