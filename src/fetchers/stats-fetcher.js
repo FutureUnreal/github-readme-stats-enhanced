@@ -292,9 +292,9 @@ const statsFetcher = async ({
         if (repo.owner && repo.owner.__typename === 'User') {
           return true;
         }
-        // Include organization repositories where user has ADMIN or MAINTAIN permissions
+        // Include organization repositories where user has ADMIN, MAINTAIN, or WRITE permissions
         if (repo.owner && repo.owner.__typename === 'Organization') {
-          return repo.viewerPermission === 'ADMIN' || repo.viewerPermission === 'MAINTAIN';
+          return ['ADMIN', 'MAINTAIN', 'WRITE'].includes(repo.viewerPermission);
         }
         return false;
       });

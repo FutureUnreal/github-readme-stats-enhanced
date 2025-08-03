@@ -394,11 +394,11 @@ Endpoint: `api/pin?username=FutureUneal&repo=github-readme-stats`
 
 ### Demo
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=FutureUneal\&repo=github-readme-stats)
+![Readme Card](https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUneal\&repo=github-readme-stats-enhanced)
 
 Use [show\_owner](#repo-card-exclusive-options) query option to include the repo's owner username
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=FutureUneal\&repo=github-readme-stats\&show_owner=true)
+![Readme Card](https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUneal\&repo=github-readme-stats-enhanced\&show_owner=true)
 
 # GitHub Gist Pins
 
