@@ -203,6 +203,8 @@ const renderStatsCard = (stats, options = {}) => {
   const {
     name,
     totalStars,
+    personalStars,
+    orgStars,
     totalCommits,
     totalIssues,
     totalPRs,
@@ -238,6 +240,7 @@ const renderStatsCard = (stats, options = {}) => {
     disable_animations = false,
     rank_icon = "default",
     show = [],
+    include_managed_repos = false,
   } = options;
 
   const lheight = parseInt(String(line_height), 10);
@@ -265,12 +268,30 @@ const renderStatsCard = (stats, options = {}) => {
   // Meta data for creating text nodes with createTextNode function
   const STATS = {};
 
-  STATS.stars = {
-    icon: icons.star,
-    label: i18n.t("statcard.totalstars"),
-    value: totalStars,
-    id: "stars",
-  };
+  // Handle separated stars display
+  if (include_managed_repos && personalStars !== undefined && orgStars !== undefined) {
+    // Show separated stars when managed repos are included
+    STATS.personalStars = {
+      icon: icons.star,
+      label: "Personal Stars:",
+      value: personalStars,
+      id: "personalStars",
+    };
+    STATS.orgStars = {
+      icon: icons.star,
+      label: "Organization Stars:",
+      value: orgStars,
+      id: "orgStars",
+    };
+  } else {
+    // Show traditional total stars
+    STATS.stars = {
+      icon: icons.star,
+      label: i18n.t("statcard.totalstars"),
+      value: include_managed_repos ? totalStars : (personalStars !== undefined ? personalStars : totalStars),
+      id: "stars",
+    };
+  }
   STATS.commits = {
     icon: icons.commits,
     label: `${i18n.t("statcard.commits")}${

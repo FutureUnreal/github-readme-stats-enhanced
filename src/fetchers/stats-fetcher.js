@@ -464,13 +464,32 @@ const fetchStats = async (
   // Retrieve stars while filtering out repositories to be hidden.
   let repoToHide = new Set(exclude_repo);
 
-  stats.totalStars = user.repositories.nodes
+  // Calculate stars with separation between personal and organization repos
+  let personalStars = 0;
+  let orgStars = 0;
+
+  user.repositories.nodes
     .filter((data) => {
       return !repoToHide.has(data.name);
     })
-    .reduce((prev, curr) => {
-      return prev + curr.stargazers.totalCount;
-    }, 0);
+    .forEach((repo) => {
+      const stars = repo.stargazers.totalCount;
+      if (repo.owner && repo.owner.__typename === 'User') {
+        personalStars += stars;
+      } else if (repo.owner && repo.owner.__typename === 'Organization') {
+        orgStars += stars;
+      }
+    });
+
+  // Store separated stars for display
+  stats.personalStars = personalStars;
+  stats.orgStars = orgStars;
+
+  // Calculate weighted total for ranking (personal: 1.0, org: 0.8)
+  const weightedStars = personalStars + (orgStars * 0.8);
+
+  // For backward compatibility and ranking, use weighted total
+  stats.totalStars = include_managed_repos ? weightedStars : personalStars;
 
   stats.rank = calculateRank({
     all_commits: include_all_commits,
