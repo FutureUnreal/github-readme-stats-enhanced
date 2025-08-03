@@ -460,13 +460,13 @@ ranking_index = (byte_count ^ size_weight) * (repo_count ^ count_weight)
 
 ### 演示
 
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)
+![Harlok's WakaTime stats](https://github-readme-stats-enhanced.vercel.app/api/wakatime?username=ffflabs)
 
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs&hide_progress=true)
+![Harlok's WakaTime stats](https://github-readme-stats-enhanced.vercel.app/api/wakatime?username=ffflabs&hide_progress=true)
 
 *   紧凑布局
 
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs&layout=compact)
+![Harlok's WakaTime stats](https://github-readme-stats-enhanced.vercel.app/api/wakatime?username=ffflabs&layout=compact)
 
 # 全部演示
 

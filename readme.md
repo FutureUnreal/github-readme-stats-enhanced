@@ -575,13 +575,13 @@ Change the `?username=` value to your [WakaTime](https://wakatime.com) username.
 
 ### Demo
 
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)
+![Harlok's WakaTime stats](https://github-readme-stats-enhanced.vercel.app/api/wakatime?username=ffflabs)
 
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs\&hide_progress=true)
+![Harlok's WakaTime stats](https://github-readme-stats-enhanced.vercel.app/api/wakatime?username=ffflabs\&hide_progress=true)
 
 *   Compact layout
 
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs\&layout=compact)
+![Harlok's WakaTime stats](https://github-readme-stats-enhanced.vercel.app/api/wakatime?username=ffflabs\&layout=compact)
 
 ***
 
@@ -589,73 +589,73 @@ Change the `?username=` value to your [WakaTime](https://wakatime.com) username.
 
 *   Default
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra)
 
 *   Hiding specific stats
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&hide=contribs,issues)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&hide=contribs,issues)
 
 *   Showing additional stats
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&show_icons=true\&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&show_icons=true\&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
 
 *   Showing icons
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&hide=issues\&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&hide=issues\&show_icons=true)
 
 *   Shows Github logo instead rank level
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&rank_icon=github)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&rank_icon=github)
 
 *   Shows user rank percentile instead of rank level
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&rank_icon=percentile)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&rank_icon=percentile)
 
 *   Customize Border Color
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&border_color=2e4058)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&border_color=2e4058)
 
 *   Include All Commits
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&include_all_commits=true)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&include_all_commits=true)
 
 *   Themes
 
 Choose from any of the [default themes](#themes)
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&show_icons=true\&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&show_icons=true\&theme=radical)
 
 *   Gradient
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra\&bg_color=30,e96443,904e95\&title_color=fff\&text_color=fff)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=anuraghazra\&bg_color=30,e96443,904e95\&title_color=fff\&text_color=fff)
 
 *   Customizing stats card
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra\&show_icons=true\&title_color=fff\&icon_color=79ff97\&text_color=9f9f9f\&bg_color=151515)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api/?username=anuraghazra\&show_icons=true\&title_color=fff\&icon_color=79ff97\&text_color=9f9f9f\&bg_color=151515)
 
 *   Setting card locale
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=anuraghazra\&locale=es)
+![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api/?username=anuraghazra\&locale=es)
 
 *   Customizing repo card
 
-![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=anuraghazra\&repo=github-readme-stats\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515)
+![Customized Card](https://github-readme-stats-enhanced.vercel.app/api/pin?username=anuraghazra\&repo=github-readme-stats\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515)
 
 *   Gist card
 
-![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)
+![Gist Card](https://github-readme-stats-enhanced.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)
 
 *   Customizing gist card
 
-![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d&theme=calm)
+![Gist Card](https://github-readme-stats-enhanced.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d&theme=calm)
 
 *   Top languages
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)
+![Top Langs](https://github-readme-stats-enhanced.vercel.app/api/top-langs/?username=anuraghazra)
 
 *   WakaTime card
 
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)
+![Harlok's WakaTime stats](https://github-readme-stats-enhanced.vercel.app/api/wakatime?username=ffflabs)
 
 ***
 
@@ -664,40 +664,40 @@ Choose from any of the [default themes](#themes)
 By default, GitHub does not lay out the cards side by side. To do that, you can use this approach:
 
 ```html
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=anuraghazra" />
+<a href="https://github.com/FutureUnreal/github-readme-stats-enhanced">
+  <img height=200 align="center" src="https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anuraghazra&layout=compact&langs_count=8&card_width=320" />
+<a href="https://github.com/FutureUnreal/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats-enhanced.vercel.app/api/top-langs?username=FutureUnreal&layout=compact&langs_count=8&card_width=320" />
 </a>
 ```
 
 ```html
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+<a href="https://github.com/FutureUnreal/github-readme-stats-enhanced">
+  <img align="center" src="https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUnreal&repo=github-readme-stats-enhanced" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
+<a href="https://github.com/FutureUnreal/convoychat">
+  <img align="center" src="https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUnreal&repo=convoychat" />
 </a>
 ```
 
 <details>
 <summary>:eyes: Show example</summary>
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=anuraghazra" />
+<a href="https://github.com/FutureUnreal/github-readme-stats-enhanced">
+  <img height=200 align="center" src="https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anuraghazra&layout=compact&langs_count=8&card_width=320" />
+<a href="https://github.com/FutureUnreal/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats-enhanced.vercel.app/api/top-langs?username=FutureUnreal&layout=compact&langs_count=8&card_width=320" />
 </a>
 
 ***
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+<a href="https://github.com/FutureUnreal/github-readme-stats-enhanced">
+  <img align="center" src="https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUnreal&repo=github-readme-stats-enhanced" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
+<a href="https://github.com/FutureUnreal/convoychat">
+  <img align="center" src="https://github-readme-stats-enhanced.vercel.app/api/pin/?username=FutureUnreal&repo=convoychat" />
 </a>
 
 </details>
@@ -775,16 +775,6 @@ If this project helps you, you can:
 *   🔗 Give proper credit when you use it in your README, linking back to it
 *   🐛 Report bugs or suggest improvements
 *   🔀 Submit Pull Requests to contribute code
-
-## Contributing Guidelines
-
-Contributions are welcome! Please ensure:
-
-1. Fork this project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ***
 
