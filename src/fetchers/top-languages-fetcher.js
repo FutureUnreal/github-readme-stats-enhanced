@@ -53,6 +53,10 @@ const fetcher = (variables, token) => {
         repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
           nodes {
             name
+            owner {
+              login
+              __typename
+            }
             languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
               edges {
                 size
