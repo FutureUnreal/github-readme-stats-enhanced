@@ -140,8 +140,9 @@ const fetchTopLanguages = async (
     });
   }
 
-  // Filter repositories based on management permissions if includeManagedRepos is enabled
+  // Filter repositories based on management permissions
   if (include_managed_repos) {
+    // Include managed organization repositories
     repoNodes = repoNodes.filter(repo => {
       // Include owned repositories (user repositories)
       if (repo.owner && repo.owner.__typename === 'User') {
@@ -152,6 +153,11 @@ const fetchTopLanguages = async (
         return repo.viewerPermission === 'ADMIN' || repo.viewerPermission === 'MAINTAIN';
       }
       return false;
+    });
+  } else {
+    // Only include user's own repositories, exclude organization repositories
+    repoNodes = repoNodes.filter(repo => {
+      return repo.owner && repo.owner.__typename === 'User';
     });
   }
 
