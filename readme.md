@@ -187,7 +187,7 @@ You can pass a query parameter `&show=` to show any specific additional stats wi
 To enable icons, you can pass `&show_icons=true` in the query param, like so:
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal&show_icons=true)
+![FutureUnreal's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal&show_icons=true)
 ```
 
 ### Themes
@@ -197,7 +197,7 @@ With inbuilt themes, you can customize the look of the card without doing any [m
 Use `&theme=THEME_NAME` parameter like so :
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal&show_icons=true&theme=radical)
+![FutureUnreal's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal&show_icons=true&theme=radical)
 ```
 
 #### All inbuilt themes
@@ -594,11 +594,11 @@ Change the `?username=` value to your [WakaTime](https://wakatime.com) username.
 
 *   Default
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal)
+![FutureUnreal's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal&include_managed_repos=true)
 
 *   With icons and theme
 
-![Anurag's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal\&show_icons=true\&theme=radical)
+![FutureUnreal's GitHub stats](https://github-readme-stats-enhanced.vercel.app/api?username=FutureUnreal\&show_icons=true\&theme=radical&include_managed_repos=true)
 
 ## Quick Tip (Align The Cards)
 
