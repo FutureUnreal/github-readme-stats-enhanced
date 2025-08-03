@@ -36,8 +36,29 @@ const GRAPHQL_REPOS_FIELD = `
 `;
 
 // Enhanced GraphQL query that includes managed organization repositories
-const GRAPHQL_REPOS_FIELD_WITH_MANAGED = `
-  repositories(first: 100, ownerAffiliations: [OWNER, ORGANIZATION_MEMBER], orderBy: {direction: DESC, field: STARGAZERS}, after: $after) {
+const GRAPHQL_REPOS_FIELD_WITH_MANAGED_OWNED = `
+  ownedRepos: repositories(first: 100, ownerAffiliations: OWNER, orderBy: {direction: DESC, field: STARGAZERS}, after: $after) {
+    totalCount
+    nodes {
+      name
+      owner {
+        login
+        __typename
+      }
+      viewerPermission
+      stargazers {
+        totalCount
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+`;
+
+const GRAPHQL_REPOS_FIELD_WITH_MANAGED_ORG = `
+  orgRepos: repositories(first: 100, ownerAffiliations: ORGANIZATION_MEMBER, orderBy: {direction: DESC, field: STARGAZERS}, after: $after) {
     totalCount
     nodes {
       name
@@ -68,7 +89,8 @@ const GRAPHQL_REPOS_QUERY = `
 const GRAPHQL_REPOS_QUERY_WITH_MANAGED = `
   query userInfo($login: String!, $after: String) {
     user(login: $login) {
-      ${GRAPHQL_REPOS_FIELD_WITH_MANAGED}
+      ${GRAPHQL_REPOS_FIELD_WITH_MANAGED_OWNED}
+      ${GRAPHQL_REPOS_FIELD_WITH_MANAGED_ORG}
     }
   }
 `;
@@ -144,7 +166,8 @@ const GRAPHQL_STATS_QUERY_WITH_MANAGED = `
       repositoryDiscussionComments(onlyAnswers: true) @include(if: $includeDiscussionsAnswers) {
         totalCount
       }
-      ${GRAPHQL_REPOS_FIELD_WITH_MANAGED}
+      ${GRAPHQL_REPOS_FIELD_WITH_MANAGED_OWNED}
+      ${GRAPHQL_REPOS_FIELD_WITH_MANAGED_ORG}
     }
   }
 `;
@@ -218,11 +241,32 @@ const statsFetcher = async ({
     }
 
     // Store stats data.
-    const repoNodes = res.data.data.user.repositories.nodes;
-    if (stats) {
-      stats.data.data.user.repositories.nodes.push(...repoNodes);
+    let repoNodes;
+    if (includeManagedRepos) {
+      // Combine owned repos and organization repos
+      const ownedRepos = res.data.data.user.ownedRepos.nodes;
+      const orgRepos = res.data.data.user.orgRepos.nodes;
+      repoNodes = [...ownedRepos, ...orgRepos];
+
+      // Update the response structure to match expected format
+      if (!stats) {
+        stats = res;
+        stats.data.data.user.repositories = {
+          nodes: repoNodes,
+          totalCount: ownedRepos.length + orgRepos.length,
+          pageInfo: res.data.data.user.ownedRepos.pageInfo
+        };
+      } else {
+        stats.data.data.user.repositories.nodes.push(...repoNodes);
+        stats.data.data.user.repositories.totalCount += repoNodes.length;
+      }
     } else {
-      stats = res;
+      repoNodes = res.data.data.user.repositories.nodes;
+      if (stats) {
+        stats.data.data.user.repositories.nodes.push(...repoNodes);
+      } else {
+        stats = res;
+      }
     }
 
     // Disable multi page fetching on public Vercel instance due to rate limits.
