@@ -33,6 +33,8 @@ export default async (req, res) => {
     disable_animations,
     hide_progress,
     include_managed_repos,
+    hide_langs_below,
+    line_height,
   } = req.query;
 
   // Debug logging for parameter parsing
